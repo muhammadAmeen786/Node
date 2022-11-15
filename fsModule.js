@@ -5,3 +5,6 @@ fs.appendFileSync('f1.txt', "hello you guys should be from kashmir");
 // that file othervise it will create the file first and then add to it.
 fs.appendFileSync("f1.txt", " \n Yes im from kashmir How are you");
 /// this line would be added to the same txt file created earlier.
+let data = fs.readFileSync('f1.txt', "utf-8");
+console.log(data);
+
