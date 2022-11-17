@@ -9,7 +9,7 @@ for(let i=0; i<input.length; i++){
 let ans = ""
 for(let i=0; i<inputArr.length; i++){
       if( !fs.existsSync(inputArr[i])){
-        console.log("bhai file nahee hai ")
+        console.log("bhai file nahee hai  " + inputArr[i])
         return;
       }
        ans += fs.readFileSync(inputArr[i]) +"\n";
